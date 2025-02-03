@@ -5,7 +5,11 @@ export default function NewProject() {
   const description = useRef();
   const dueDate = useRef();
 
-  function handleSave() {}
+  function handleSave() {
+    const enteredTitle = title.current.value;
+    const enteredDescription = description.current.value;
+    const enteredDueDate = dueDate.current.value;
+  }
 
   return (
     <div className="w-[35rem] mt-16">
