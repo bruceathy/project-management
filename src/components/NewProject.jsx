@@ -9,13 +9,13 @@ export default function NewProject({ onAdd }) {
     const enteredTitle = title.current.value;
     const enteredDescription = description.current.value;
     const enteredDueDate = dueDate.current.value;
-  }
 
-  onAdd({
-    title: enteredTitle,
-    description: enteredDescription,
-    dueDate: enteredDueDate,
-  });
+    onAdd({
+      title: enteredTitle,
+      description: enteredDescription,
+      dueDate: enteredDueDate,
+    });
+  }
 
   return (
     <div className="w-[35rem] mt-16">
@@ -35,9 +35,9 @@ export default function NewProject({ onAdd }) {
         </li>
       </menu>
       <div>
-        <Input ref={title} label="Project" />
+        <Input type="text" ref={title} label="Project" />
         <Input ref={description} label="Description" textarea />
-        <Input ref={dueDate} label="Due Date" type="date" />
+        <Input type="date" ref={dueDate} label="Due Date" />
       </div>
     </div>
   );
