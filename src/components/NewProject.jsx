@@ -1,9 +1,12 @@
-import Input from "./Input";
-import Modal from "./Modal";
 import { useRef } from "react";
 
+import Input from "./Input";
+import Modal from "./Modal";
+
+// REWATCH 157 TO TRY TO FIND BUG
 export default function NewProject({ onAdd }) {
   const modal = useRef();
+
   const title = useRef();
   const description = useRef();
   const dueDate = useRef();

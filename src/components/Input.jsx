@@ -1,5 +1,4 @@
 import { forwardRef } from "react";
-// change to forwardRef
 
 const Input = forwardRef(function Input({ label, textarea, ...props }, ref) {
   const classes =
